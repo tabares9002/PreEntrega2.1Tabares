@@ -3,7 +3,7 @@ var productos = [
     { nombre: "Mouse", precio: 8 },
     { nombre: "Parlantes", precio: 5 },
     { nombre: "Monitor", precio: 150 },
-    { nombre: "Torre", precio: 150 }
+    { nombre: "Torre", precio: 80 }
 ];
 
 var nombreProducto = prompt("Ingrese el nombre del producto:");

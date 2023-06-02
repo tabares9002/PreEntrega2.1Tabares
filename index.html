@@ -5,45 +5,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Tienda de Informática</title>
 </head>
 
 <body>
-        <h1>Tienda de Productos Informáticos</h1>
+    <!-- Header de la pagina -->
+    <header class="container-fluid bg-info d-flex justify-content-center">
+        <h1 class="p-2">Informática <span class="tabares">Tabares</span></h1>
+    </header>
 
-        <div class="producto">
-            <img src="teclado.jpg" alt="Teclado">
-            <span class="nombre">Teclado</span>
-            <button>Añadir al carrito</button>
+    <!-- Barra de Navegacion -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="/index.html">
+            <img src="./assets/img/Logo.webp" alt="Logo" height="80" width="90">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Menu"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="Menu">
+            <div class="navbar-nav mr-auto ml-auto text-center">
+                <a class="nav-item nav-link active" href="./assets/pages/productos.html">Nuestros Productos</a>
+                <a class="nav-item nav-link" href="./assets/pages/Servicios.html">Nuestros Servicios</a>
+                <a class="nav-item nav-link" href="./assets/pages/preguntas.html">Preguntas Frecuentes</a>
+                <a class="nav-item nav-link" href="./assets/pages/solicitar_servicio.html">Solicitar Servicios</a>
+            </div>
         </div>
+    </nav>
 
-        <div class="producto">
-            <img src="mouse.jpg" alt="Mouse">
-            <span class="nombre">Mouse</span>
-            <button>Añadir al carrito</button>
+    <!-- Imágenes de Productos -->
+    <section class="container" id="galeria">
+        <div class="text-center pt-5 ">
+            <h1>Algunos de Nuestros Productos</h1>
+            <p>Ponemos a su Disposición Equipos de la más Alta Calidad</p>
         </div>
+        <div class="row pt-5 text-center">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="./assets/img/monitor.jpg" target="_blank">
+                    <img class="rounded" src="./assets/img/monitor.jpg" alt="Galeria Productos">
+                </a>
+                <p class="text-center mt-2">Monitor</p>
+                <button class="readMore btn">Añadir al Carrito</button>
+            </div>
 
-        <div class="producto">
-            <img src="parlantes.jpg" alt="Parlantes">
-            <span class="nombre">Parlantes</span>
-            <button>Añadir al carrito</button>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="./assets/img/mouse.jpg" target="_blank">
+                    <img class="rounded" src="./assets/img/mouse.jpg" alt="Galeria Productos">
+                </a>
+                <p class="text-center mt-2">Mouse</p>
+                <button class="readMore btn">Añadir al Carrito</button>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="./assets/img/parlantes.jpg" target="_blank">
+                    <img class="rounded" src="./assets/img/parlantes.jpg" alt="Galeria Productos">
+                </a>
+                <p class="text-center mt-2">Parlantes</p>
+                <button class="readMore btn">Añadir al Carrito</button>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                <a href="./assets/img/teclado.jpg" target="_blank">
+                    <img class="rounded" src="./assets/img/teclado.jpg" alt="Galeria Productos">
+                </a>
+                <p class="text-center mt-2">Teclado</p>
+                <button class="readMore btn">Añadir al Carrito</button>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12  mt-4">
+                <a href="./assets/img/torre.jpg" target="_blank">
+                    <img class="rounded" src="./assets/img/torre.jpg" alt="Galeria Productos">
+                </a>
+                <p class="text-center mt-2">Torre</p>
+                <button class="readMore btn">Añadir al Carrito</button>
+            </div>
         </div>
+    </section>
 
-        <div class="producto">
-            <img src="monitor.jpg" alt="Monitor">
-            <span class="nombre">Monitor</span>
-            <button>Añadir al carrito</button>
+    <!-- Footer -->
+    <footer class="w-100 d-flex justify-content-around flex-wrap mt-5">
+        <div class="p-4 mt-2" id="mapa">
+            <iframe class="rounded"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1636.6789886791414!2d-56.11196959999999!3d-34.8723561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f872d0d018c9f%3A0x674b7c60d6a9017!2sDr%20Carlos%20Mar%C3%ADa%20Prando%202428%2C%2011400%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1682265717693!5m2!1ses-419!2suy"
+                width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
-        <div class="producto">
-            <img src="torre.jpg" alt="Torre">
-            <span class="nombre">Torre</span>
-            <button>Añadir al carrito</button>
+        <p class="px-3 pt-3 mt-2" id="footerText">
+            <span class="span">Informática Tabares</span> <br> Todos los derechos reservados 2023
+        </p>
+        <div class="mt-5" id="redes">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
         </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
 
 
-        <script src="/js/main.js"></script>
-    </body>
+</body>
 
-    </html>
+</html>

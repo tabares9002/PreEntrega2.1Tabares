@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#galeria img {
+    width: 100%;
+    height: 300px;
+    border: solid 2px lightgrey;
+    box-shadow: 3px 4px 6px rgba(61, 60, 60, 0.65);
+    object-fit: contain;
+}
+
+#galeria img:hover {
+    transform: scale(1.02);
+    transition: 100ms;
+    box-shadow: 3px 3px 10px 5px rgba(61, 60, 60, 0.65);
+}
+
+#galeria .col-lg-4 {
+    padding: 20px;
+}
+
+#galeria p {
+    text-shadow: 1px 1px 3px rgba(83, 82, 82, 0.637);
+    font-weight: bold;
+}
+
+#galeria h1 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#galeria button {
+    background-color: rgba(59, 111, 122, 0.404);
+    border-radius: 50px;
+    border: 1px solid lightseagreen;
+}
+
+#galeria button:hover {
+    box-shadow: 0 4px 16px rgba(83, 82, 82, 0.637);
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.815);
+    min-height: 100px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+footer .span {
+    font-weight: bold;
+    color: rgb(92, 144, 255);
+    font-size: 20px;
+}
+
+footer #redes {
+    font-size: 30px;
+    padding: 0 10;
+}
+
+footer #footerText {
+    font-size: 30px;
+}
+
+footer .span {
+    font-size: 50px;
+}
+
+
+@media (max-width: 768px) {
+    #galeria img {
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+}

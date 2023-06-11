@@ -1,3 +1,4 @@
+const BuscarPrecios = () =>{
 let productos = [
     { nombre: "Teclado", precio: 10 },
     { nombre: "Mouse", precio: 8 },
@@ -17,3 +18,6 @@ if (productoEncontrado) {
 } else {
     alert("Lo siento, actualmente no tenemos el producto:" + " " + nombreProducto + " " + "en stock o escribió incorrectamente el nombre del producto.");
 }
+}
+
+BuscarPrecios()
